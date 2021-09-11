@@ -14,3 +14,7 @@ Inicialmente será feito para Linux Fedora 34, e posteriormente será validado e
 
 - C
 - GTK 4
+
+## Atualmente na versão 0.2
+
+Layout criado no Figma: https://www.figma.com/file/Tf6UBtb1EuLN8E00Z4CQ07/Instalador?node-id=0%3A1
