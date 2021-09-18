@@ -1,5 +1,6 @@
 #include <gtk/gtk.h>
 #include "front/aplicacao.h"
+#include "front/principal.h"
 
 /**
  * Estrutura para receber os argumentos adicionais e repassá-las através das funções do GTK
@@ -18,6 +19,7 @@ typedef struct _args args;
 
 void ativar(GtkApplication *app, gpointer user_data) {
     GtkWidget *janela = NULL;
+    GtkWidget *principal = NULL;
     args *argumentos = NULL;
     bool check = FALSE;
 
@@ -30,6 +32,8 @@ void ativar(GtkApplication *app, gpointer user_data) {
 
     argumentos = (args *) user_data;
     janela = criarJanela(770, 535, "Instalador de programas");
+    principal = criarContainerPrincipal();
+    gtk_window_set_child(GTK_WINDOW(janela), principal);
 
     gtk_widget_show(janela);
 }
