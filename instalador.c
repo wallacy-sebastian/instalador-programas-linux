@@ -29,7 +29,7 @@ void ativar(GtkApplication *app, gpointer user_data) {
     }
 
     argumentos = (args *) user_data;
-    janela = criarJanela(600, 480, "Instalador de programas");
+    janela = criarJanela(770, 535, "Instalador de programas");
 
     gtk_widget_show(janela);
 }
